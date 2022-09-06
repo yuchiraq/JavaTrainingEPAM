@@ -1,3 +1,5 @@
+package linear;
+
 import java.util.Scanner;
 import java.lang.Math;
 
@@ -13,7 +15,7 @@ public class task2 {
 
     double a, b, c, answer;
 
-    double start(){
+    public double start(){
         Scanner in = new Scanner(System.in);
         System.out.println("Enter ur variables:");
         System.out.print("a > ");
