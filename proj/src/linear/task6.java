@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class task6 {
 
-    public static void main(){
+    public static void main(String[] args){
         task6 task6 = new task6();
         System.out.println("This task is: " + task6.task);
         BufferedImage taskIm = null;
