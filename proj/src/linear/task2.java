@@ -5,15 +5,15 @@ import java.lang.Math;
 
 public class task2 {
 
+    String task = "Вычислить (переменные - действительные числа): ( (b + sqrt(b^2 + 4ac)) / 2a ) - a^3 * c + b^(-2)";
+
+    double a, b, c, answer;
+
     public static void main(String[] args){
         task2 task2 = new task2();
         System.out.println("This task is: " + task2.task);
         task2.start();
     }
-
-    String task = "Вычислить (переменные - действительные числа): ( (b + sqrt(b^2 + 4ac)) / 2a ) - a^3 * c + b^(-2)";
-
-    double a, b, c, answer;
 
     public double start(){
         Scanner in = new Scanner(System.in);

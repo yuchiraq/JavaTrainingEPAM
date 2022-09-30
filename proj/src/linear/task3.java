@@ -5,15 +5,15 @@ import java.lang.Math;
 
 public class task3 {
 
+    String task = "Вычислить (переменные - действительные числа): ( (sin(x)+cos(y)) / (cos(x) - sin(y)) ) * tg(xy)";
+
+    double x, y ,answer;
+
     public static void main(String[] args){
         task3 task3 = new task3();
         System.out.println("This task is: " + task3.task);
         task3.start();
     }
-
-    String task = "Вычислить (переменные - действительные числа): ( (sin(x)+cos(y)) / (cos(x) - sin(y)) ) * tg(xy)";
-
-    double x, y ,answer;
 
     public double start(){
         Scanner in = new Scanner(System.in);

@@ -4,17 +4,17 @@ import java.util.Scanner;
 
 public class task5 {
 
-    public static void main(String[] args){
-        task5 task5 = new task5();
-        System.out.println("This task is: " + task5.task);
-        task5.start();
-    }
-
     String task = "Дано натуральное число T, которое представляет длительность прошедшего времени в секундах. Вывести данное значение в форме: HHч MMмин SSс";
 
     double secInput;
     double sec;
     int min, hours;
+
+    public static void main(String[] args){
+        task5 task5 = new task5();
+        System.out.println("This task is: " + task5.task);
+        task5.start();
+    }
 
     public void start(){
         Scanner in = new Scanner(System.in);

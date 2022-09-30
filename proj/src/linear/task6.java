@@ -7,7 +7,15 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
+
+
+
 public class task6 {
+
+    String task = "Вывод true, если введённая координата (х,у) входит в закрашенную область данного графика. False если не входит";
+
+    double x, y;
+    boolean answer;
 
     public static void main(String[] args){
         task6 task6 = new task6();
@@ -36,11 +44,6 @@ public class task6 {
         if(taskIm != null && f.isVisible())
             f.setVisible(false);
     }
-
-    String task = "Вывод true, если введённая координата (х,у) входит в закрашенную область данного графика. False если не входит";
-
-    double x, y;
-    boolean answer;
 
     boolean start(){
         Scanner in = new Scanner(System.in);

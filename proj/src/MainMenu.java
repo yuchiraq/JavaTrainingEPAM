@@ -37,8 +37,104 @@ public class MainMenu {
                 case 2:
                     menuBranching();
                     break;
+                case 3:
+                    menuLoops();
+                    break;
                 default:
                     System.out.println("Check ur input!");
+            }
+        }
+    }
+
+
+    private static class tasksLoops{
+
+        static String task1 = "Напишите программу, где пользователь вводит любое целое положительное число.\n" +
+                "А программа суммирует все числа от 1 до введенного пользователем числа.";
+
+        static String task2 = "Вычислить значения функции на отрезке [а,b] c шагом h:";
+
+        static String task3 = "Найти сумму квадратов первых ста чисел.";
+
+        static String task4 = "Составить программу нахождения произведения квадратов первых двухсот чисел.";
+
+        static String task5 = "Даны числовой ряд и некоторое число е. Найти сумму тех членов ряда, модуль которых больше или равен\n" +
+                "заданному е. Общий член ряда имеет вид...";
+
+        static String task6 = "Вывести на экран соответствия между символами и их численными обозначениями в памяти компьютера.";
+
+        static String task7 = "Для каждого натурального числа в промежутке от m до n вывести все делители, кроме единицы и самого числа.\n" +
+                "m и n вводятся с клавиатуры.";
+
+        static String task8 = "Даны два числа. Определить цифры, входящие в запись как первого так и второго числа.";
+
+    }
+
+    static void menuLoops(){
+        Scanner read = new Scanner(System.in);
+        int key = 50;
+        String[] args = null;
+        while (true){
+            System.out.println("Enter the task num:");
+            System.out.println("0 - Exit");
+            System.out.println("1 - " + tasksLoops.task1);
+            System.out.println("2 - " + tasksLoops.task2);
+            System.out.println("3 - " + tasksLoops.task3);
+            System.out.println("4 - " + tasksLoops.task4);
+            System.out.println("5 - " + tasksLoops.task5);
+            System.out.println("6 - " + tasksLoops.task6);
+            System.out.println("7 - " + tasksLoops.task7);
+            System.out.println("8 - " + tasksLoops.task8);
+            System.out.print("> ");
+            key = read.nextInt();
+            System.out.println();
+            System.out.println();
+            switch (key){
+                case 0:
+                    return;
+                case 1:
+                    System.out.println("You have chosen task 1:");
+                    loops.task1.main(args);
+                    break;
+                case 2:
+                    System.out.println("You have chosen task 2:");
+                    loops.task2.main(args);
+                    break;
+                case 3:
+                    System.out.println("You have chosen task 3:");
+                    loops.task3.main(args);
+                    break;
+                case 4:
+                    System.out.println("You have chosen task 4:");
+                    loops.task4.main(args);
+                    break;
+                case 5:
+                    System.out.println("You have chosen task 5:");
+                    loops.task5.main(args);
+                    break;
+                case 6:
+                    System.out.println("You have chosen task 6:");
+                    loops.task6.main(args);
+                    break;
+                case 7:
+                    System.out.println("You have chosen task 7:");
+                    loops.task7.main(args);
+                    break;
+                case 8:
+                    System.out.println("You have chosen task 8:");
+                    loops.task8.main(args);
+                    break;
+                default:
+                    System.out.println("Error: Check num of task!");
+            }
+            System.out.println();
+            System.out.println();
+            key = 50;
+            try{
+                System.out.println("wait 3 sec");
+                TimeUnit.SECONDS.sleep(3);
+            }catch (InterruptedException exception){
+                System.out.println(exception.toString());
             }
         }
     }
@@ -101,8 +197,8 @@ public class MainMenu {
             System.out.println();
             key = 50;
             try{
-                TimeUnit.SECONDS.sleep(3);
                 System.out.println("wait 3 sec");
+                TimeUnit.SECONDS.sleep(3);
             }catch (InterruptedException exception){
                 System.out.println(exception.toString());
             }
@@ -179,8 +275,8 @@ public class MainMenu {
             System.out.println();
             key = 50;
             try{
-                TimeUnit.SECONDS.sleep(3);
                 System.out.println("wait 3 sec");
+                TimeUnit.SECONDS.sleep(3);
             }catch (InterruptedException exception){
                 System.out.println(exception.toString());
             }

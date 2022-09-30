@@ -7,6 +7,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
+import static java.lang.Math.pow;
+
 public class task5 {
 
     public static String task = "Вычислить значение функции:";
@@ -66,10 +68,10 @@ public class task5 {
     }
 
     void logicIfLarger(){
-
+        answer = 1 / (pow(x, 3) + 6);
     }
 
     void logicIfLess(){
-
+        answer = pow(x, 2) - 3*x + 9;
     }
 }
